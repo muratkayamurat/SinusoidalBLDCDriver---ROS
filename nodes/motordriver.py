@@ -190,6 +190,7 @@ class motordriver():
             if(self.control_command_counter>9):
                 self.control_command_counter = 10
                 self.control_command = ""
+                command = "SE=12,40,65,20,20,000,000,15,15,65,72,13,64"
             self.old_errorcode = 0
             self.errorcode = 0
         self.motorhid.write_device(command)
